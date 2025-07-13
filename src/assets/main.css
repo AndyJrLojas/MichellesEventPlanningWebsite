@@ -1,0 +1,73 @@
+/* src/assets/main.css */
+
+/* --- 1. FONTS (We'll add a Google Font link in index.html) --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Poppins:wght@400;500;600&display=swap');
+
+/* --- 2. THEME & COLOR PALETTE (Inspired by the new design) --- */
+:root {
+  /* Core Colors */
+  --color-background: #ffffff; /* Clean white background */
+  --color-text: #333333; /* Softer, dark gray for text */
+
+  /* Accent Colors from Inspiration */
+  --color-gold: #c5a773;
+  --color-dark-slate: #2c3e50; /* A professional dark blue/slate */
+  --color-white: #ffffff;
+
+  /* Semantic Names */
+  --color-heading: var(--color-dark-slate);
+  --color-primary-cta: var(--color-gold); /* For buttons and links */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Poppins', sans-serif;
+}
+
+/* --- 3. BASE & RESET STYLES --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; /* Add padding reset */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.7;
+  font-family: var(--font-sans); /* Default to sans-serif */
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif); /* Serif for headings */
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary-cta);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
