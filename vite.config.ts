@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/MichellesEventPlanningWebsite/', // Replace with your repository name
+  base: '/MichellesEventPlanningWebsite/',
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {
